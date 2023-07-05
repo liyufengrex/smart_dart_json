@@ -1,8 +1,5 @@
-### 介绍
-JSON 解析工具，当解析JSON字段内包括不存在字段时，可返回默认值，不报错
+import 'package:smart_dart_json/smart_dart_json.dart';
 
-### 使用方式参考
-```dart
 void main() {
   const json =
       '{\"title\": \"示例title\", 	\"data\": [{ 		\"name\": \"rex\", 		\"age\": 10 	}] }';
@@ -20,14 +17,3 @@ void main() {
   print('undefinedKey1 : $undefinedKey1');
   print('undefinedKey2 : $undefinedKey2');
 }
-```
-打印结果
-```dart
-title : 示例title
-data : [{name: rex, age: 10}]
-undefinedKey1 : 
-undefinedKey2 : null
-```
-
-### Features
-公司**老五**写的json解析工具类，用习惯了，为了能在自己的开源库里使用上，特此借用。
