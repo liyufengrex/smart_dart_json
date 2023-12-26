@@ -13,9 +13,9 @@ void main() {
   final title = sJson['title'].stringValue;
   final data = sJson['data'].arrayValue.map((e) => e.mapValue).toList();
 
-  //模拟未定义的字段获取 （方式一）
+  //模拟未定义的字段获取 （方式一） 可返回默认值
   final undefinedKey1 = sJson['undefinedKey1'].stringValue;
-  //模拟未定义的字段获取 （方式二）
+  //模拟未定义的字段获取 （方式二） 
   final undefinedKey2 = sJson['undefinedKey2'].string;
 
   print('title : $title');
@@ -31,6 +31,8 @@ data : [{name: rex, age: 10}]
 undefinedKey1 : 
 undefinedKey2 : null
 ```
+
+使用本库进行模型转换可查看 test.dart 文件
 
 ### Features
 公司**老五**写的json解析工具类，用习惯了，为了能在自己的开源库里使用上，特此借用。

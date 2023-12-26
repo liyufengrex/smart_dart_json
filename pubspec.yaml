@@ -1,11 +1,11 @@
 name: smart_dart_json
 description: smart_dart_json
-version: 0.0.1+1
+version: 1.0.0+1
 author: lixiaohong<liyufengisme@gmail.com>
 homepage: https://github.com/liyufengrex/smart_dart_json.git
 
 environment:
-  sdk: '>=2.19.2 <3.0.0'
+  sdk: '>=2.17.0 < 3.0.5'
   flutter: ">=1.17.0"
 
 dependencies:
